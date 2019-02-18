@@ -25,9 +25,11 @@ body {
 @media (max-width: 700px) {
     .main-header {
         display: grid;
-        font-size: 15px;
+        font-size: 12px;
         position: relative;
+        margin-left: 6rem;
     }
+  
 }
 
 .nav__list {
@@ -95,6 +97,7 @@ h2 {
     max-width: 80rem;
     width: 58%;
     padding-bottom: 3rem;
+    
 }
 .tech-skills{
     padding-top: 3rem;
@@ -118,7 +121,7 @@ h2 {
 }
 
 .footer {
-    color: blue;
+    color:yellow;
     background-color: black;
     display: flex;
     justify-content: center;
