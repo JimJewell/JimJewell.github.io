@@ -12,9 +12,9 @@ body {
 
 .main-header {
     display: flex;
-    font-size: 15px;
+    font-size: 17px;
     justify-content: space-between;
-    margin-left: 9rem;
+    margin-left: 10rem;
     align-items: center;
     position: fixed;
     top: 0;
