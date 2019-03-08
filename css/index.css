@@ -22,6 +22,8 @@ body {
     opacity: 0.6;
 }
 
+
+
 .nav__list {
     display: flex;
     flex-direction: column;
@@ -145,6 +147,9 @@ h2 {
         justify-content: center;
         position: relative;
         margin: 0 auto;
+        font-size: 15px;
+        height: 20vh;
+        font-weight: 400 ;
     }
 }
 
@@ -161,9 +166,9 @@ h2 {
 @media (max-width: 700px) {
     .hero-image {
         background-image: none;
-        position: relative;
+        /* position: relative; */
         margin: 0 auto;
-        height: 94vh;
+        height: 75vh;
         
     }
 }
@@ -199,6 +204,12 @@ h2 {
 
 @media (max-width: 700px){
     .main-container{
-        margin-top: -6rem;
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-header__logo{
+    display: none;
     }
 }
