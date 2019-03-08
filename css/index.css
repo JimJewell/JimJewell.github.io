@@ -152,6 +152,7 @@ h2 {
     .bio {
         margin: 0 auto;
         align-self: center;
+        text-align: center;
     }
 }
 
@@ -171,7 +172,7 @@ h2 {
     body {
         width: 95%;
         height: 95%;
-        font: 20px/1.618 sans-serif;
+        font: 15px sans-serif;
     }
 }
 
