@@ -22,16 +22,6 @@ body {
     opacity: 0.6;
 }
 
-@media (max-width: 700px) {
-    .main-header {
-        display: grid;
-        font-size: 12px;
-        position: relative;
-        margin-left: 6rem;
-    }
-  
-}
-
 .nav__list {
     display: flex;
     flex-direction: column;
@@ -97,34 +87,110 @@ h2 {
     max-width: 80rem;
     width: 58%;
     padding-bottom: 3rem;
-    
 }
-.tech-skills{
+
+.tech-skills {
     padding-top: 3rem;
-    
-}
-
-.projects {
-    color: white;
-    display: grid;
-    margin: 0 auto;
-    max-width: 80rem;
-    width: 58%;
-    padding-bottom: 3rem;
-}
-
-@media (min-width: 1240px) {
-    .column-layout {
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
 .footer {
-    color:yellow;
+    color: yellow;
     background-color: black;
     display: flex;
     justify-content: center;
     margin: 0.25rem;
     width: 100%;
+}
+
+#projects-title {
+    display: grid;
+    align-items: center;
+    margin-left: 4.5rem;
+}
+
+.projects {
+    width: 100%
+}
+
+.column-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto auto auto;
+    background-color: black;
+    color: #444;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: black;
+    color: #fff;
+}
+
+
+
+@media (max-width: 700px) {
+    .column-layout, .grid-item{
+        display: flex;
+        flex-direction: column;
+       
+        grid-template-columns: none;
+        grid-template-rows: none;
+        align-self: center;
+    }
+}
+@media (max-width: 700px) {
+    .main-header {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .bio {
+        margin: 0 auto;
+        align-self: center;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .hero-image {
+        background-image: none;
+        position: relative;
+        margin: 0 auto;
+        height: 94vh;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 95%;
+        height: 95%;
+        font: 20px/1.618 sans-serif;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav__list li a {
+        display: block;
+        align-self: center;
+        color: gold;
+        text-decoration-line: none;
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px) {
+#projects-title, h2 {
+    
+    align-self: center;
+    margin: 0 auto;
+    
+    
+}
 }
