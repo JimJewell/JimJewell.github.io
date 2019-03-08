@@ -149,7 +149,7 @@ h2 {
         margin: 0 auto;
         font-size: 15px;
         height: 20vh;
-        font-weight: 400 ;
+        font-weight: 400;
     }
 }
 
@@ -202,11 +202,11 @@ h2 {
 }
 
 
-@media (max-width: 700px){
+/* @media (max-width: 700px){
     .main-container{
         margin-top: -1rem;
     }
-}
+} */
 
 @media (max-width: 700px) {
     .main-header__logo{
