@@ -11,22 +11,41 @@
 <html>
 
 <body>
+    <!--Header  -->
     <header class="main-header">
+        <!-- Logo Image -->
         <figure class="main-header__logo"><a href="#"><img src="css/images/logofullsize.jpg" alt="initials logo"
-                    width=150 height=150></a>
+                    width="80px" height="80px"></a>
         </figure>
+        <!--Navigation Top Menu  -->
         <nav class="nav nav--margin-right">
-            <ul class="nav__list">
-                <li class="nav__list-item"><a href="#">HOME</a></li>
-                <li class="nav__list-item"><a href="#about-me">ABOUT ME</a></li>
-                <li class="nav__list-item"><a href="#tech">SKILL SET</a></li>
-                <li class="nav__list-item"><a href="#projects-title">PROJECTS</a></li>
+            <ul class="nav__area">
+                <li class="nav__area-item"><a href="#">HOME</a></li>
+                <li class="nav__area-item"><a href="#about-me">ABOUT ME</a></li>
+                <li class="nav__area-item"><a href="#tech">SKILL SET</a></li>
+                <li class="nav__area-item"><a href="#projects-title">PROJECTS</a></li>
 
             </ul>
         </nav>
+
+        
     </header>
+    <!-- Mobile Size Menu -->
+            <div class="menu">
+                    
+                    <nav class="nav">
+                      <button class="nav__button">Menu</button>
+                      <ul class="nav__list hide">
+                        <li class="nav__item"><a href="#">Home</a></li>
+                        <li class="nav__item"><a href="#about-me">About</a></li>
+                        <li class="nav__item"><a href="#tech">Skill Set</a></li>
+                        <li class="nav__item"><a href="#projects-title">Projects</a></li>
+                      </ul>
+                    </nav>
+                </div>
     <main>
         <div class="main-container">
+            <!--Hero Image  -->
             <section class="hero-image">
                 <figure class="photo"><img src="css/images/picture.png" alt="Jim, wife, son at wedding photo" width=350
                         height=400>
@@ -57,10 +76,20 @@
                         cultivating high-performing teams in the tech industry. I believe it is important
                         to invest the time needed to understand my clients vision so that I may help them reach
                         their goals. </p>
-                    <p>When I am not developing, problem-solving, or learning, I enjoy spending time with
-                        friends and family. I like to venture outdoors, whether it be involved with my children's many
-                        sports or
-                        standing on the bow of my boat casting a line. </p>
+                    <!-- Modal Button -->
+                    <button class="openButton">Read More</button>
+                    <div class="modalBox">
+                        <div class="modalBoxContent">
+                            <span class="closeButton">&times;</span>
+                            <h1> Cont'd.</h1>
+                            <p>When I am not developing, problem-solving, or learning, I enjoy spending time with
+                                friends and family. I like to venture outdoors, whether it be involved with my
+                                children's many
+                                sports or
+                                standing on the bow of my boat casting a line. </p>
+                        </div>
+                    </div>
+
                 </section>
             </article>
             <div class="tech-skills">
@@ -80,39 +109,84 @@
                 </article>
             </div>
         </div>
-        <article id="projects-title">
-            <h2 class="project-title">Projects</h2>
+        <div id="projects-title">
+            <a class="projects" href="https://github.com/JimJewell" target="_blank">Projects</a>
+        </div>
+        
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <ul class="carousel" data-target="carousel">
+                <li class="card" data-target="card">
+                    <figure><a href="https://github.com/JimJewell/mastery-blog" target="_blank"><img
+                                src="css/images/blogcaption.png" alt="screenshot of spring boot blog site"
+                                height="200px" width="200px" /></a></figure>
+                                
+                </li>
+                <li class="card" data-target="card">
+                    <figure><a href="https://josiejewell.github.io" target="_blank"><img
+                                src="css/images/josiesitenarrowed.png" alt="Josie's page" height="225px"
+                                width="225px"></a></figure>
+                </li>
+                <li class="card" data-target="card">
+                    <figure><a href="https://github.com/JimJewell/review-site" target="_blank"><img
+                                src="css/images/reviewsitecaption.png" alt="Josie's page" height="225px"
+                                width="225px"></a></figure>
+                </li>
+                <li class="card" data-target="card">
+                    <figure><a href="https://github.com/JimJewell/drumKit" target="_blank"><img
+                                src="css/images/drumKitJavascriptcaption.png" alt="screenshot of pet project"
+                                height="200px" width="200px"></a></figure>
+                </li>
+                <li class="card" data-target="card">
+                    <figure><a href="https://github.com/JimJewell/masteryproject1-hospital" target="_blank"></a><img
+                                src="css/images/hospital.png" alt="screenshot of hospital project" height="200px"
+                                width="200px"></a></figure>
+                </li>
+                <li class="card" data-target="card">
+                    <figure><a href="https://github.com/JimJewell/virtual-pet" target="_blank"><img
+                                src="css/images/virtualpet2.jpg" alt="screenshot of pet project" height="200px"
+                                width="200px"></a></figure>
+                </li>
+            </ul>
+            <div class="button-container">
+                <button data-action="slideLeft">&leftarrow;</button>
+                <button data-action="slideRight">&rightarrow;</button>
+            </div>
+        </div>
+
+        <article id="grid-title">
+            <h2 class="grid-title">Projects</h2>
         </article>
-        <div class="projects">
+        <div class="projects-grid">
             <div class="column-layout">
 
 
 
-                <article class="grid-item">
+                <article class="grid-item-1">
                     <h3>Virtual Pet</h3>
                 </article>
-                <article class="grid-item">
+                <article class="grid-item-2">
                     <h3>Virtual Hospital</h3>
                 </article>
-                <article class="grid-item">
+                <article class="grid-item-3">
                     <h3>Josie's Portfolio</h3>
                 </article>
-                <article class="grid-item">
+                <article class="grid-item-4">
                     <p>Team Java Project - {Java|Git|Eclipse}</p>
                 </article>
-                <article class="grid-item">
+                <article class="grid-item-5">
                     <p>Java Project - {Java|Git|Eclipse}</p>
                 </article>
-                <article class="grid-item">
+                <article class="grid-item-6">
                     <p>{HTML5|CSS}</p>
                 </article>
-                <article class="grid-item">
+                <article class="grid-item-7">
                     <figure><a href="https://github.com/JimJewell/virtual-pet" target="_blank"><img
                                 src="css/images/virtualpet2.jpg" alt="screenshot of pet project" height="300"
                                 width="350"></a></figure>
 
                 </article>
-                <article class="grid-item">
+                <article class="grid-item-8">
 
 
 
@@ -122,7 +196,7 @@
 
 
                 </article>
-                <article class="grid-item">
+                <article class="grid-item-9">
 
                     <figure><a href="https://josiejewell.github.io" target="_blank"><img src="css/images/josie.png"
                                 alt="Josie's page" height="300" width="350"></a>
@@ -138,7 +212,7 @@
         <footer>
             <small> &copy; Jim Jewell </small>
         </footer>
-        <script>"js/profile.js"</script>
+        <script src="js/profile.js"></script>
 </body>
 
 </html>
