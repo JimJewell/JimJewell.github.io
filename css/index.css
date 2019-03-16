@@ -303,12 +303,12 @@ h2 {
 @media (max-width: 700px) {
     .main-header {
         display: none;
-        justify-content: center;
+        /* justify-content: center;
         position: relative;
         margin: 0 auto;
         font-size: 15px;
         height: 20vh;
-        font-weight: 400;
+        font-weight: 400; */
     }
 }
 
@@ -327,7 +327,8 @@ h2 {
         margin: 0;
         height: 75vh;
         max-width: 100%;
-       
+        justify-content: center;
+       padding-bottom: 0;
     }
 }
 
@@ -360,6 +361,11 @@ h2 {
 @media (max-width: 700px) {
     .main-header__logo {
         display: none;
+    }
+
+    #photo{
+        height: 225px;
+        width: 225px;
     }
 
     body {
