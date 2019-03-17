@@ -7,7 +7,7 @@ body {
     width: 100%;
     height: 100%;
     font: 20px/1.618 sans-serif;
-    background-color: black;
+    background: linear-gradient(to bottom right, black, rgb(48, 43, 43));
 }
 
 /* Main Header */
@@ -18,7 +18,7 @@ body {
     }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 700px) {
     .main-header {
         display: flex;
         font-size: 15px;
@@ -105,6 +105,7 @@ h2 {
     max-width: 80rem;
     width: 58%;
     padding-bottom: 3rem;
+    
 }
 
 .tech-skills {
@@ -118,7 +119,7 @@ h2 {
     font-size: 30px;
     text-decoration: none;
     font-weight: bold;
-    padding-bottom: 1rem;
+    padding-bottom: 0.25rem;
     /* padding-top: */
 }
 
@@ -163,6 +164,7 @@ h2 {
 
 .closeButton:hover {
     background-color: darkgray;
+    
 }
 
 .showModal {
@@ -179,6 +181,11 @@ h2 {
     margin-top: 0.6rem;
     padding: 0.1rem;
     border-radius: 0.1rem;
+    outline: none;
+}
+
+.openButton:hover{
+    font-size: 18px;
 }
 
 /* Carousel */
@@ -195,7 +202,8 @@ h2 {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .button-container {
@@ -258,9 +266,9 @@ h2 {
     background-color: black;
     display: flex;
     justify-content: center;
-    margin: 0.25rem;
+    
     width: 100%;
-    padding-top: 3rem;
+    padding: 0.5rem;
 }
 
 @media (max-width: 700px) {
@@ -281,23 +289,32 @@ h2 {
        
     }
     .grid-item-1 {
-        grid-row-start: 4;
+        grid-row-start: 13;
     }
     .grid-item-4 {
-        grid-row-start: 5;
+        grid-row-start: 14;
     }
     .grid-item-7 {
-        grid-row-start: 6;
+        grid-row-start: 15;
     }
     .grid-item-3 {
-        grid-row-start: 1
+        grid-row-start: 1;
     }
     .grid-item-6 {
-        grid-row-start: 2
+        grid-row-start: 2;
     }
     .grid-item-9 {
-        grid-row-start: 3
+        grid-row-start: 3;
     }
+    /* .grid-item-2{
+        grid-row-start: 16
+    }
+    .grid-item-4{
+        grid-row-start: 17
+    }
+    .grid-item-8{
+        grid-row-start: 18
+    } */
 }
 
 @media (max-width: 700px) {
@@ -437,7 +454,49 @@ h2 {
     .nav__item:last-child {
         margin-bottom: 0;
     }
-    /*
-   * Action Classes (JS Stuff)
-   */
+   
 }
+
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+    background-color: goldenrod;
+    color:black;
+    cursor: pointer;
+    padding: .5rem;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+ }
+
+ @media (max-width: 700px){
+     .collapsible{
+         display: none;
+     }
+ }
+/* Style the button that is used to open and close the collapsible content */
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: gold;
+    font-size: 20px;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: gold;
+    font-size: 15px;
+    max-width: 50%;
+    margin: 0 auto;
+    
+    
+    
+    
+    
+    
+  } 

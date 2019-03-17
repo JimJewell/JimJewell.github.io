@@ -28,27 +28,27 @@
             </ul>
         </nav>
 
-        
+
     </header>
     <!-- Mobile Size Menu -->
-            <div class="menu">
-                    
-                    <nav class="nav">
-                      <button class="nav__button">Menu</button>
-                      <ul class="nav__list hide">
-                        <li class="nav__item"><a href="#">Home</a></li>
-                        <li class="nav__item"><a href="#about-me">About</a></li>
-                        <li class="nav__item"><a href="#tech">Skill Set</a></li>
-                        <li class="nav__item"><a href="#projects-title">Projects</a></li>
-                      </ul>
-                    </nav>
-                </div>
+    <div class="menu">
+
+        <nav class="nav">
+            <button class="nav__button">Menu</button>
+            <ul class="nav__list hide">
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#about-me">About</a></li>
+                <li class="nav__item"><a href="#tech">Skill Set</a></li>
+                <li class="nav__item"><a href="#projects-title">Projects</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <div class="main-container">
             <!--Hero Image  -->
             <section class="hero-image">
-                <figure class="photo"><img id="photo" src="css/images/picture.png" alt="Jim, wife, son at wedding photo" width=350
-                        height=400>
+                <figure class="photo"><img id="photo" src="css/images/picture.png" alt="Jim, wife, son at wedding photo"
+                        width=350 height=400>
                 </figure>
                 <h1 class="hero-image__title">Jim Jewell</h1>
                 <p class="hero-image__subtitle">Software Developer</p>
@@ -112,15 +112,25 @@
         <div id="projects-title">
             <a class="projects" href="https://github.com/JimJewell" target="_blank">Projects</a>
         </div>
-        
+
+        <button class="collapsible">View Details</button>
+        <div class="content">
+            <p>Project 1: Blog Site: Spring Boot, HTML, Thymeleaf, CSS3 </p>
+            <p>Project 2: Family Member Website: HTML, CSS3, JavaScript</p>
+            <p>Project 3: Review Site: Spring Boot, HTML, Thymeleaf, CSS3</p>
+            <p>Project 4: Keyboard Drum Kit: HTML, CSS3, JavaScript</p>
+            <p>Project 5: Virtual Hospital: Java, Console, Git</p>
+            <p>Project 6: Virtual Pet Shelter: Java, Console, Git</p>
+        </div>
+
         <!-- Carousel -->
         <div class="carousel-container">
             <ul class="carousel" data-target="carousel">
                 <li class="card" data-target="card">
                     <figure><a href="https://github.com/JimJewell/mastery-blog" target="_blank"><img
-                                src="css/images/blogcaption.png" alt="screenshot of spring boot blog site"
-                                height="200px" width="200px" /></a></figure>
-                                
+                                src="css/images/BlogSite.png" alt="screenshot of spring boot blog site" height="200px"
+                                width="200px" /></a></figure>
+
                 </li>
                 <li class="card" data-target="card">
                     <figure><a href="https://josiejewell.github.io" target="_blank"><img
@@ -129,18 +139,18 @@
                 </li>
                 <li class="card" data-target="card">
                     <figure><a href="https://github.com/JimJewell/review-site" target="_blank"><img
-                                src="css/images/reviewsitecaption.png" alt="Josie's page" height="225px"
-                                width="225px"></a></figure>
+                                src="css/images/reviewsite.PNG" alt="Josie's page" height="225px" width="225px"></a>
+                    </figure>
                 </li>
                 <li class="card" data-target="card">
                     <figure><a href="https://github.com/JimJewell/drumKit" target="_blank"><img
-                                src="css/images/drumKitJavascriptcaption.png" alt="screenshot of pet project"
-                                height="200px" width="200px"></a></figure>
+                                src="css/images/drumKitJavascript.PNG" alt="screenshot of pet project" height="200px"
+                                width="200px"></a></figure>
                 </li>
                 <li class="card" data-target="card">
                     <figure><a href="https://github.com/JimJewell/masteryproject1-hospital" target="_blank"></a><img
-                                src="css/images/hospital.png" alt="screenshot of hospital project" height="200px"
-                                width="200px"></a></figure>
+                            src="css/images/hospital.png" alt="screenshot of hospital project" height="200px"
+                            width="200px"></a></figure>
                 </li>
                 <li class="card" data-target="card">
                     <figure><a href="https://github.com/JimJewell/virtual-pet" target="_blank"><img
@@ -154,9 +164,12 @@
             </div>
         </div>
 
+        <!-- Mobile Grid Box Project Display -->
         <article id="grid-title">
             <h2 class="grid-title">Projects</h2>
         </article>
+
+
         <div class="projects-grid">
             <div class="column-layout">
 
@@ -184,24 +197,49 @@
                     <figure><a href="https://github.com/JimJewell/virtual-pet" target="_blank"><img
                                 src="css/images/virtualpet2.jpg" alt="screenshot of pet project" height="300"
                                 width="350"></a></figure>
-
                 </article>
                 <article class="grid-item-8">
-
-
-
                     <figure><a href="https://github.com/JimJewell/masteryproject1-hospital" target="_blank"><img
                                 src="css/images/hospital.png" alt="screenshot of hospital project" height="300"
                                 width="350"></a></figure>
-
-
                 </article>
                 <article class="grid-item-9">
-
                     <figure><a href="https://josiejewell.github.io" target="_blank"><img src="css/images/josie.png"
                                 alt="Josie's page" height="300" width="350"></a>
                     </figure>
-
+                </article>
+                <article class="grid-item-10">
+                    <p>Blog Site</p>
+                </article>
+                <article class="grid-item-11">
+                    <p>Spring Boot Project - {HTML|Thymeleaf|CSS3}</p>
+                </article>
+                <article class="grid-item-12">
+                    <figure><a href="https://github.com/JimJewell/mastery-blog" target="_blank"><img src="css/images/BlogSite.png"
+                                alt="Blog website" height="300" width="350"></a>
+                    </figure>
+                </article>
+                <article class="grid-item-13">
+                    <p>Review Site</p>
+                </article>
+                <article class="grid-item-14">
+                    <h3>Spring Boot Project - {HTML|Thymeleaf|CSS3}</h3>
+                </article>
+                <article class="grid-item-15">
+                    <figure><a href="https://github.com/JimJewell/review-site" target="_blank"><img src="css/images/reviewsite.PNG"
+                                alt="Review Website" height="300" width="350"></a>
+                    </figure>
+                </article>
+                <article class="grid-item-16">
+                    <h3>Drum Kit</h3>
+                </article>
+                <article class="grid-item-17">
+                    <h3>Keyboard Sound Board - {HTML|CSS3|JavaScript}</h3>
+                </article>
+                <article class="grid-item-18">
+                    <figure><a href="https://github.com/JimJewell/drumKit" target="_blank"><img src="css/images/drumKitJavascript.PNG"
+                                alt="Keyboard soundboard" height="300" width="350"></a>
+                    </figure>
                 </article>
             </div>
         </div>

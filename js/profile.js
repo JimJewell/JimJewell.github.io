@@ -80,3 +80,20 @@ leftButton.addEventListener("click", function() {
       toggleHide(navList);
     });
   }
+
+
+
+  let collapsible = document.getElementsByClassName("collapsible");
+  let height;
+
+for (height = 0; height < collapsible.length; height++) {
+  collapsible[height].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
