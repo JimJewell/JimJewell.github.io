@@ -108,10 +108,12 @@ h2 {
     max-width: 80rem;
     width: 58%;
     padding-bottom: 3rem;
-    padding-top: 3rem;
+    
     
     
 }
+
+
 
 .tech-skills {
     padding-top: 3rem;
@@ -325,12 +327,17 @@ h2 {
         font-weight: 400; */
     }
 }
-
+@media (min-width: 700px) {
+    .bio{
+    padding-top: 3rem;
+    }
+}
 @media (max-width: 700px) {
     .bio {
         margin: 0 auto;
         align-self: center;
         text-align: center;
+        
     }
 }
 
